@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="900.0" minWidth="1200.0" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m2l.m2l.HelloController"> <!-- ajouter le fx:controller -->
+   <children>
+      <Label fx:id="lb_menu_bienvenue" layoutX="244.0" layoutY="-98.0" minHeight="848.0" minWidth="1200.0" prefHeight="848.0" prefWidth="1231.0" text="Bienvenue dans notre projet m2l">
+         <font>
+            <Font name="Arial" size="54.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="menu_menubar" prefHeight="27.0" prefWidth="1200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu fx:id="menu_menu_competition" mnemonicParsing="false" text="Competition">
+            <items>
+              <MenuItem fx:id="itm_menu_addcompetition" mnemonicParsing="false" text="ajouter" />
+                  <MenuItem fx:id="itm_menu_seecompetition" mnemonicParsing="false" text="voir" />
+            </items>
+          </Menu>
+          <Menu fx:id="menu_menu_equipe" mnemonicParsing="false" text="Equipe">
+            <items>
+              <MenuItem fx:id="itm_menu_addequipe" mnemonicParsing="false" text="ajouter" />
+                  <MenuItem fx:id="itm_menu_seeequipe" mnemonicParsing="false" text="voir" />
+            </items>
+          </Menu>
+          <Menu fx:id="menu_menu_personne" mnemonicParsing="false" text="Personne">
+            <items>
+              <MenuItem fx:id="itm_menu_addpersonne" mnemonicParsing="false" text="ajouter" />
+                  <MenuItem fx:id="itm_menu_seepersonne" mnemonicParsing="false" text="voir" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

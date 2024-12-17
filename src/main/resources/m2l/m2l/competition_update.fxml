@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <Label fx:id="lb_competition_new_newcomp" layoutX="448.0" layoutY="51.0" prefHeight="86.0" prefWidth="305.0" text="Nouvelle competition">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_competition_new_nomcompetition" layoutX="356.0" layoutY="177.0" text="Nom de la competition:">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_competition_new_datecompetition" layoutX="356.0" layoutY="227.0" text="Date de cloture:">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_competition_new_equipecompetition" layoutX="526.0" layoutY="342.0" text="En équipe:">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nom" layoutX="628.0" layoutY="176.0" prefHeight="26.0" prefWidth="214.0" />
+      <TextField fx:id="txt_date" layoutX="628.0" layoutY="226.0" prefHeight="26.0" prefWidth="213.0" />
+      <Button fx:id="btn_ajouter" layoutX="526.0" layoutY="435.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Ajouter">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Button>
+      <CheckBox fx:id="cb_equipe" layoutX="646.0" layoutY="335.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="16.0" />
+      <Button fx:id="btn_retour" layoutX="916.0" layoutY="744.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="197.0" text="Retour">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tab_equipe_L" layoutX="74.0" layoutY="272.0" prefHeight="200.0" prefWidth="416.0">
+         <columns>
+            <TableColumn fx:id="idequipe_L" prefWidth="89.0" text="equipe id" />
+            <TableColumn fx:id="nomequipe_L" prefWidth="326.0" text="equipe nom" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tab_equipe_R" layoutX="710.0" layoutY="272.0" prefHeight="200.0" prefWidth="416.0">
+         <columns>
+            <TableColumn fx:id="idequipe_R" prefWidth="89.0" text="equipe id" />
+            <TableColumn fx:id="nomequipe_R" prefWidth="326.0" text="equipe nom" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tab_personne_L" layoutX="75.0" layoutY="512.0" prefHeight="200.0" prefWidth="416.0">
+         <columns>
+            <TableColumn fx:id="idpersonne_L" prefWidth="82.0" text="id Personne" />
+            <TableColumn fx:id="nompersonne_L" prefWidth="164.0" text="Nom personne" />
+            <TableColumn fx:id="prenompersonne_L" prefWidth="169.0" text="Prenom personne" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tab_personne_R" layoutX="711.0" layoutY="512.0" prefHeight="200.0" prefWidth="416.0">
+         <columns>
+            <TableColumn fx:id="idpersonne_R" prefWidth="82.0" text="id Personne" />
+            <TableColumn fx:id="nompersonne_R" prefWidth="164.0" text="Nom personne" />
+            <TableColumn fx:id="prenompersonne_R" prefWidth="169.0" text="Prenom personne" />
+         </columns>
+      </TableView>
+      <Button fx:id="btn_retirer" layoutX="526.0" layoutY="512.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Retirer">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_creer" layoutX="502.0" layoutY="728.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="197.0" text="Creer">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

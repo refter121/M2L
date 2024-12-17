@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m2l.m2l.newPersoneController">
+   <children>
+      <Label layoutX="475.0" layoutY="124.0" text="Nouvelle personne">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="333.0" text="Nom de la persone :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nom" layoutX="455.0" layoutY="335.0" prefHeight="25.0" prefWidth="631.0" />
+      <TextField fx:id="txt_prenom" layoutX="455.0" layoutY="386.0" prefHeight="25.0" prefWidth="631.0" />
+      <TextField fx:id="txt_adresse" layoutX="455.0" layoutY="438.0" prefHeight="25.0" prefWidth="631.0" />
+      <Button fx:id="btn_ajouter" layoutX="502.0" layoutY="572.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="197.0" text="Create">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="105.0" layoutY="384.0" text="Prenom de la persone :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="436.0" text="\@Email de la persone :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_retour" layoutX="936.0" layoutY="764.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="197.0" text="Retour">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

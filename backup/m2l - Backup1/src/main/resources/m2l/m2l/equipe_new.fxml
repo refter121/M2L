@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m2l.m2l.newEquipeController">
+   <children>
+      <Label fx:id="lb_equipe_new_newequipe" layoutX="497.0" layoutY="69.0" prefHeight="86.0" prefWidth="223.0" text="Nouvelle equipe">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_equipe_new_nomequipe" layoutX="296.0" layoutY="243.0" text="Nom de l'equipe">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_equipe_new_idjoueur" layoutX="296.0" layoutY="293.0" text="Id du joueur">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nomequipe" layoutX="568.0" layoutY="242.0" prefHeight="26.0" prefWidth="214.0" />
+      <TextField fx:id="txt_idjoueur" layoutX="568.0" layoutY="292.0" prefHeight="26.0" prefWidth="213.0" />
+      <Button fx:id="btn_addjoueur" layoutX="514.0" layoutY="432.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="173.0" text="Ajouter joueur">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Button>
+      <Button fx:id="btn_retour" layoutX="916.0" layoutY="744.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="197.0" text="Retour">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_ajouter" layoutX="510.0" layoutY="643.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="197.0" text="Create">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tab_personne_L" layoutX="62.0" layoutY="416.0" prefHeight="200.0" prefWidth="416.0">
+         <columns>
+            <TableColumn fx:id="idpersonne_L" prefWidth="82.0" text="id Personne" />
+            <TableColumn fx:id="nompersonne_L" prefWidth="164.0" text="Nom Personne" />
+            <TableColumn fx:id="prenompersonne_L" prefWidth="169.0" text="Prenom Personne" />
+         </columns>
+      </TableView>
+      <Button fx:id="btn_retirer" layoutX="514.0" layoutY="559.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="173.0" text="Retirer joueur">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tab_personne_R" layoutX="720.0" layoutY="416.0" prefHeight="200.0" prefWidth="416.0">
+         <columns>
+            <TableColumn fx:id="idpersonne_R" prefWidth="82.0" text="id Personne" />
+            <TableColumn fx:id="nompersonne_R" prefWidth="164.0" text="Nom personne" />
+            <TableColumn fx:id="prenompersonne_R" prefWidth="169.0" text="Prenom personne" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

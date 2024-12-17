@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="m2ljar">
+    <output-path>$PROJECT_DIR$/out/artifacts/m2ljar</output-path>
+    <root id="archive" name="m2ljar.jar">
+      <element id="module-output" name="m2l" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/m2l/m2l/HelloApplication.java" />
+    </root>
+  </artifact>
+</component>

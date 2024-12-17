@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lb_equipe_update_update" layoutX="468.0" layoutY="82.0" prefHeight="86.0" prefWidth="266.0" text="update competition">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_equipe_update_nom" layoutX="296.0" layoutY="243.0" text="Nom de l'équipe">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_equipe_update_idjoueur" layoutX="296.0" layoutY="293.0" text="Id joueur">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nomequipe" layoutX="568.0" layoutY="242.0" prefHeight="26.0" prefWidth="214.0" />
+      <TextField fx:id="txt_idjoueur" layoutX="568.0" layoutY="292.0" prefHeight="26.0" prefWidth="213.0" />
+      <Button fx:id="btn_addjoueur" layoutX="400.0" layoutY="350.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="169.0" text="add">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Button>
+      <Button fx:id="btn_retour" layoutX="936.0" layoutY="764.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="197.0" text="Retour">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_remove" layoutX="600.0" layoutY="350.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="150.0" text="remove">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tab_joueur" layoutX="316.0" layoutY="401.0" prefHeight="200.0" prefWidth="571.0">
+        <columns>
+          <TableColumn fx:id="tc_idpersonne" prefWidth="143.20001220703125" text="id" />
+          <TableColumn fx:id="tc_personneprenom" minWidth="0.0" prefWidth="124.20001220703125" text="prenom" />
+            <TableColumn fx:id="tc_personnenom" minWidth="0.0" prefWidth="124.0" text="nom" />
+            <TableColumn fx:id="tc_email" minWidth="0.0" prefWidth="179.199951171875" text="\@email" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_maj" layoutX="503.0" layoutY="636.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="197.0" text="Update">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
